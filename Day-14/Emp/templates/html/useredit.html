@@ -1,0 +1,20 @@
+{% extends 'html/header.html' %}
+{% block title %}User Update
+{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="row mt-3">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<form method="POST" info.id>
+				{% csrf_token %}
+                <input type="text" class="form-control" name="username" value="{{info.username}}" placeholder="Enter UserName">
+                <input type="text" class="form-control" name="email" value="{{info.email}}" placeholder="EmailId">
+                <input type="number" class="form-control" name="age" value="{{info.age}}" placeholder="Age">
+                <input type="password" class="form-control" name="password" value="{{info.password}}" placeholder="Enter Password">
+                <input type="submit"> 
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

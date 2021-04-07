@@ -1,0 +1,24 @@
+{% extends 'html/header.html' %}
+{% block title %}Details{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="card col-md-4">
+			<h3 class="text-danger">Profile Image</h3>
+			<div class="card-body">
+				<img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" height="200px" width="">
+			</div>
+		</div>
+		<div class="card col-md-7">
+			<h3 class="text-info">User Details</h3>
+			<div class="">
+				<h5><label class="text-success"> UserName: {{d.us}}</label></h5>
+				<h5><label class="text-success"> EmailId: {{d.em}}</label></h5>
+				<h5><label class="text-success"> Age: {{d.age}}</label></h5>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+{% endblock %}

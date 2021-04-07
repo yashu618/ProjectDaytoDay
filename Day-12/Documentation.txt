@@ -1,0 +1,25 @@
+ORM:
+========
+
+* from app.models import classname(in models)
+* select* from table
+  insert()
+
+* Object Relational Mapping
+
+      -> 2 ways:
+           
+	     classname.objects.create(fieldname="value")
+
+            data=classname(fieldname="value")
+            data.save()
+            -> accessing table data
+                    ->all
+                    ->values()
+                    ->values_list()
+                    ->values(fieldname).get(fieldname)
+                    ->get()
+                    ->filter()
+                    ->last()
+                    ->first()
+                    ->order_by()
